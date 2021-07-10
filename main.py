@@ -38,7 +38,7 @@ while game_is_on:
     for segment in snake.segments:
         if segment == snake.head:
             pass
-        elif snake.head.distance() <10:
+        elif snake.head.distance(food) <10:
             game_is_on = False
 
 
